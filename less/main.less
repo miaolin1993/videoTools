@@ -1,0 +1,162 @@
+#box {
+  position: relative;
+  margin: 100px auto;
+  width: 600px;
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 0 8px;
+    bottom: 4px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(58, 57, 57);
+    a {
+      display: flex;
+      justify-content: center;
+      width: 30px;
+      font-size: 20px;
+      color: #fff;
+    }
+    .time {
+      font-size: 12px;
+      color: #fff;
+      margin-right: 14px;
+    }
+    #speed {
+      font-size: 14px;
+      margin-left: 6px;
+    }
+    .vol {
+      display: none;
+      position: absolute;
+      transform: rotate(180deg);
+      right: 50px;
+      bottom: 42px;
+      width: 6px;
+      height: 60px;
+      border-radius: 60px;
+      background-color: rgb(49, 48, 48);
+      .go {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        span {
+          position: absolute;
+          bottom: -2px;
+          right: -3px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+      }
+    }
+    .over {
+      position: relative;
+      flex: 1;
+      height: 4px;
+      background-color: #999;
+      .v-load {
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background-color: #ccc;
+      }
+      .go {
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background-color: #fff;;
+        span {
+          position: absolute;
+          right: 0;
+          top: -2px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #fff;
+          
+        }
+      }
+    }
+  }
+  // 倍速菜单
+  .speed {
+    position: absolute;
+    bottom: 44px;
+    right: 70px;
+    display: none;
+    height: 24px;
+    width: 160px;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      background-color: #3a3939;
+      color: rgba(255,255,255,0.8);
+      width: 40px;
+      height: 24px;
+      font-size: 12px;
+    }
+    button:active {
+      background-color: rgb(184, 202, 118);
+    }
+  }
+}
+
+#hidden-pause {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255,255,255,.6);
+  color: #fff;
+  font-size: 60px;
+}
+// 自定义渐变消失动画
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 当用户使用双核浏览器的时候，优先使用webkit内核来渲染 -->
+  <meta name="renderer" content="webkit">
+  <!-- 当用户使用ie浏览器，使用最新的idge内核来解析，有更好的兼容性 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- <link rel="shortcut icon" href="./favicon.ico"> -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/template.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>正在播放...</title>
+  <script src="./js/flexible.js"></script>
+</head>
+
+<body>
+  <div id="box">
+    <!-- <video src="./medias/fun.mp4" class="video"></video> -->
+    <video src="https://blz-videos.nosdn.127.net/1/World%20of%20Warcraft/Warbringers+Jaina.mp4" class="video"></video>
+    <!-- the media control menu -->
+    <div class="speed">
+      <button class="speed-up">+</button>
+      <button class="speed-quick">1.5</button>
+      <button class="speed-init">1.0</button>
+      <button class="speed-down">-</button>
+    </div>
+    <div class="menu">
+      <!-- play or pause -->
+      <!-- icon-pause -->
+      <a href="javascript:;" class="icon-play" id="run"></a>
+      <div class="time">
+        <span class="current">00:00:00 /</span>
+        <span class="total">00:00:00</span>
+      </div>
+      <!-- progress bar -->
+      <div class="over">
+        <!-- 缓冲条 -->
+        <div class="v-load"></div>
+        <!-- 当前进度条 -->
+        <div class="go">
+          <span></span>
+        </div>
+      </div>
+      <a href="javascript:;" class="" id="speed">1.0</a>
+      <a href="javascript:;" class="icon-volume-up" id="vol"></a>
+      <a href="javascript:;" class="icon-expand"></a>
+      <div class="vol">
+        <div class="go">
+          <span></span>
+      </div>
+    </div> 
+  </div>
+  <div id="hidden-pause" class=""></div>
+
+  <script src="./js/tools.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

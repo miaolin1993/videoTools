@@ -1,0 +1,26 @@
+// out:false, main:template.less
+
+
+//out line to hidden 
+.out_line (@num: 2) {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @num;
+}
+
+// to compatible many explorer
+.radius (@num: 50%) {
+	-moz-border-radius: @num;
+	-webkit-border-radius: @num;
+	-ms-border-radius: @num;
+	-o-border-radius: @num;
+	border-radius: @num;
+}
+
+// to align center
+.align-center() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

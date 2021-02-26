@@ -1,0 +1,57 @@
+
+@import './common.less';
+
+* {
+	/* 内边距和边框不会撑大盒子 */
+	box-sizing: border-box;
+}
+
+body,
+ul,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+}
+
+
+li {
+	/* 清除li默认的符号和编号 */
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	/* a标签不会继承父元素的文字颜色 */
+}
+
+input,
+button {
+	/* 清除轮廓线 */
+	outline: 0;
+	/* 清除边框 */
+	border: 0;
+}
+
+img {
+	/* 清除ie6标签下图片默认边框 */
+	border: 0;
+	max-width: 100%;
+	max-height: 100%;
+	/* 清除图片底部默认缝隙 */
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* 清除标题默认的加粗 */
+	font-weight: 400;
+}
